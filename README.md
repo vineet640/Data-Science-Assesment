@@ -1,5 +1,3 @@
-# Data Science Technical Case
-
 1. What relevant key metrics are provided to evaluate the CTA combinations? And which
 CTA Copy and CTA Placement did best/worst based on the key metrics?
 
