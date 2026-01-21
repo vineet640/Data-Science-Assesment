@@ -1,59 +1,13 @@
 # Data Science Technical Case
 
-This repository contains the solution for a data science technical case study.
+1. What relevant key metrics are provided to evaluate the CTA combinations? And which
+CTA Copy and CTA Placement did best/worst based on the key metrics?
 
-## Project Structure
+2. Which groups of people tend to be more correlated or less correlated with our key
+metrics?
 
-- `train.csv` - Training dataset
-- `test.csv` - Test dataset
-- `example_predictions.csv` - Example predictions format
-- `make_submission.py` - Python function to create submission files
-- `make_submission.R` - R function to create submission files
-- `Data_Science_Technical_Case.docx` - Project documentation
+3. What ways can you manipulate the columns/dataset to create features that increase
+predictive power towards our key metric?
 
-## Usage
-
-### Python
-
-```python
-from make_submission import make_submission
-import pandas as pd
-
-# Create your predictions DataFrame
-predictions = pd.DataFrame({
-    'userId': [...],
-    'predicted_probability': [...]
-})
-
-# Generate submission file
-make_submission('your_name', predictions)
-```
-
-### R
-
-```r
-source('make_submission.R')
-
-# Create your predictions data frame
-predictions <- data.frame(
-    userId = c(...),
-    predicted_probability = c(...)
-)
-
-# Generate submission file
-make_submission('your_name', predictions)
-```
-
-## Requirements
-
-### Python
-- pandas
-
-### R
-- Base R (no additional packages required)
-
-## Notes
-
-- The submission file must contain exactly 20,000 rows
-- The first column must be named `userId`
-- The second column should contain predicted probabilities
+4. Besides Log Loss, what other metrics will you use to evaluate the model's performance,
+and why?
